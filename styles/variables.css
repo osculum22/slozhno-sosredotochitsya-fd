@@ -3,16 +3,16 @@
   и их переопределение под различные устройства
 */
 :root {
-  --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: #000028;
-  --decor-color: rgb(255, 0, 112);
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #fff1f7;
+  --decor-color: #353430;
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-family: 'IBM Plex Mono';
-  --title-text-color: #db00ff;
-  --accent-color: rgb(255, 0, 112);
-  --section-title-color: #ff0070;
-  --subtitle-text-color: #000028;
-  --text-color: #f1b2ce;
+  --title-text-color: #ffc2e6;
+  --section-title-color: #353430;
+  --accent-color: #ff8dcb;
+  --subtitle-text-color: #353430;
+  --text-color: #353430;
   --corner-inset: 12px;
   --corner-size: 25px;
   --rec-decor-size: 9px;

@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   box-sizing: border-box;
+  margin-block-end: 10px;
 }
 
 .header {
@@ -284,6 +285,10 @@
 }
 
 @media (width >= 768px) {
+  .page {
+    margin-block-end: 0;
+  }
+
   /* верхний правый уголок */
   header.decorated-zone::before {
     inset-block-start: 20px;
