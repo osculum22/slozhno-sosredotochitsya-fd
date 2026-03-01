@@ -10,3 +10,37 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+.dark-decor {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--small-size);
+  line-height: var(--rec-line-height);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--decor-color);
+  inset-block-start: var(--rec-inset);
+  inset-inline-end: var(--rec-inset);
+  gap: var(--usual-gap);
+}
+
+.dark-decor::after {
+  content: '';
+  min-inline-size: var(--rec-decor-size);
+  min-block-size: var(--rec-decor-size);
+  border-radius: 50%;
+  background: var(--decor-color);
+  box-shadow: 0 0 4px 3px var(--decor-color);
+}
+
+@media (width >= 768px) {
+  .dark-decor {
+    inset-block-start: 20px;
+    inset-inline-end: 30px;
+  }
+}
