@@ -19,63 +19,81 @@
   --accent-color: #ff8dcb;
   --subtitle-text-color: #353430;
   --text-color: #353430;
+
+  --small-size: 18px;
+  --usual-offset: 10px;
+  --usual-gap: 10px;
+
+  --dark-decor-display: none;
 }
 
-html.theme-light .dark-decor {
-  display: none;
-}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url('../images/cover-image-light.png');
+    --bg-color: #fff1f7;
+    --decor-color: #353430;
+    --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-family: 'IBM Plex Mono';
+    --title-text-color: #ffc2e6;
+    --section-title-color: #353430;
+    --accent-color: #ff8dcb;
+    --subtitle-text-color: #353430;
+    --text-color: #353430;
+    --color-button: rgb(53, 52, 48);
+    --color-button-border: rgb(53, 52, 48, 0.4);
+    /*--small-size: 18px;
+  --usual-offset: 10px;
+  --usual-gap: 10px;*/
 
-html.theme-light .header__theme-menu-item {
-  font-family: var(--font-family), sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--small-size);
-  line-height: var(--small-size);
-  text-align: center;
-  color: var(--text-color);
-}
+    /*Отступы шапки*/
+    --header-gap: 10px;
+    --head-small-font: 18px;
 
-html.theme-light .header__theme-menu-button {
-  position: relative;
-  margin-block-end: 5px;
-}
+    /*Толщина границ*/
+    --decor-border: 1px;
 
-html.theme-light .header__theme-menu-button:hover::before {
-  content: '';
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  transform: translate(-50%, -5%) scale(2);
-  width: 80%;
-  height: 59%;
-  border: 1px solid color-mix(in srgb, var(--text-color) 40%, transparent);
-  pointer-events: none;
-}
+    /*Отступы и размеры в секциях, карточках, универсальный*/
+    --section-gap: 10px;
+    --small-font-size: 18px;
 
-html.theme-light .header__theme-menu-button_active::before {
-  content: '';
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  transform: translate(-50%, -5%) scale(2);
-  width: 80%;
-  height: 59%;
-  border: 1px solid var(--text-color);
-}
+    /*Тени*/
+    --shadow-x: 2px;
+    --shadow-y: 1px;
 
-html.theme-light .header__theme-menu-button:focus::before {
-  content: '';
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  transform: translate(-50%, -5%) scale(2);
-  width: 80%;
-  height: 59%;
-  border: none;
-  border-bottom: 1px solid var(--text-color);
-  pointer-events: none;
-}
+    /*Размеры и отступы REC и уголков*/
+    --corner-inset: 10px;
+    --corner-size: 25px;
+    /* --rec-decor-size: 9px;
+  --rec-line-height: 25px;
+  --rec-inset: 20px;
+  --blur-radius: 4px;
+  --spread-radius: 3px;*/
 
-html.theme-light .header__theme-menu-button:focus-visible {
-  outline: none;
+    /*Размеры и отступы футера*/
+    --footer-gap: 5px;
+
+    /* Футер — уголки при >=768 */
+    --footer-corner-top-tablet: 38px;
+    --footer-corner-bottom-tablet: 995px;
+    /* Футер — заголовок >=768 */
+    --footer-title-offset-tablet: 40px;
+
+    /* Футер — уголки при >=1024 */
+    --footer-corner-top-big: 38px;
+    --footer-corner-bottom-big: 745px;
+    /* Футер — заголовок >=1024 */
+    --footer-title-offset-big: 40px;
+
+    /**/
+
+    /**/
+
+    /**/
+
+    /**/
+
+    /**/
+
+    --dark-decor-display: none;
+  }
 }

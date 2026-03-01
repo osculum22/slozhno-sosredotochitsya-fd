@@ -65,8 +65,8 @@ a {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 50px;
-  margin-inline: var(--usual-offset);
-  margin-block: calc(var(--usual-offset) * 4);
+  margin-inline: var(--section-gap);
+  margin-block: calc(var(--section-gap) * 4);
 }
 
 .footer {
