@@ -214,7 +214,7 @@
 
 .text-shadow {
   text-decoration: none;
-  text-shadow: var(--shadow-x) var(shadow-y) 0 var(--accent-color);
+  text-shadow: var(--shadow-x) var(--shadow-y) 0 var(--accent-color);
 }
 
 .text-shadow:hover {
