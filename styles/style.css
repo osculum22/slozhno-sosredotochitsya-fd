@@ -10,12 +10,11 @@
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   box-sizing: border-box;
-  margin-block-end: 10px;
 }
 
 .header {
   height: 100vh;
-  min-height: 678px;
+  min-height: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -25,7 +24,7 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  margin-block: 75px 65px;
+  margin-block: 65px 55px;
   margin-inline: 0 23px;
   width: auto;
   max-width: 100%;
@@ -113,7 +112,7 @@
   display: block;
   min-block-size: var(--corner-size);
   min-inline-size: var(--corner-size);
-  inset-block-start: calc(var(--corner-inset) * 2);
+  inset-block-start: var(--corner-inset);
   inset-inline-end: var(--corner-inset);
   border-block-start: var(--decor-border) solid var(--decor-color);
   border-inline-end: var(--decor-border) solid var(--decor-color);
@@ -128,8 +127,8 @@
   display: block;
   min-block-size: var(--corner-size);
   min-inline-size: var(--corner-size);
+  inset-inline-start: var(--corner-inset);
   inset-block-end: var(--corner-inset);
-  inset-inline-start: calc(var(--corner-inset) * 0.8);
   border-block-end: var(--decor-border) solid var(--decor-color);
   border-inline-start: var(--decor-border) solid var(--decor-color);
   border-block-start: none;
@@ -146,6 +145,8 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   margin-inline: var(--header-gap);
   padding-block: 0;
+  top: var(--section-gap);
+  position: relative;
 }
 
 .section {
@@ -164,7 +165,7 @@
 
 .question {
   min-block-size: 117px;
-  margin-block: 55px 66px;
+  margin-block: 65px 65px;
   margin-inline: var(--section-gap);
   height: min-content;
 }
@@ -231,6 +232,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
+  margin-block-end: var(--section-gap);
 }
 
 .gallery {
@@ -278,7 +280,7 @@
   text-transform: uppercase;
   color: var(--decor-color);
   inset-block-start: var(--rec-inset);
-  inset-inline-end: var(--rec-inset);
+  inset-inline-end: calc(var(--rec-inset) * 2);
   gap: var(--section-gap);
 }
 
@@ -318,41 +320,39 @@
     grid-column: span 3;
     grid-row: 2 / 3;
     text-wrap: nowrap;
-    padding-inline: 0;
     margin-inline: 0;
-    margin-block-start: calc(var(--header-gap) * 4);
-    transform: translateY(var(--header-gap));
+    align-items: start;
   }
 
   .dark-decor {
-    inset-block-start: var(--rec-inset);
-    inset-inline-end: calc(var(--rec-inset) * 1.5);
+    inset-inline-end: calc(var(--rec-inset) * 3);
+    inset-block-start: 20px;
   }
 
   .question {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
     padding-inline-end: calc(var(--section-gap) * 4);
-    padding-block-end: 0;
     min-block-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-inline-start: 0;
-    margin-inline-end: calc(var(--section-gap) * 2);
+    margin-inline-end: 20px;
+    margin-block-end: 75px;
   }
 
   .header__theme-menu {
     grid-column: 4;
     grid-row: 1 / 2;
-    margin-inline: 0 calc(var(--header-gap) * 3);
+    margin-inline: 35px;
+    margin-block: 195px 55px;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding-block-end: calc(var(--header-gap) * 5.8);
+    justify-content: normal;
   }
 
   .section {
@@ -447,7 +447,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 35px;
+    gap: var(--header-menu-biggest-gap);
   }
 
   .header__theme-menu {
@@ -456,17 +456,17 @@
     justify-content: center;
     align-items: start;
     margin-inline: 0;
-    margin-block: 22px 119px;
+    margin-block: var(--header-menu-big-gap) var(--big-section-gap);
   }
 
   .header__title {
-    font-size: 157px;
-    margin-block-start: 87px;
+    font-size: var(--big-font-size);
+    margin-block-start: var(--biggest-gap);
   }
 
   .question {
     padding-inline-end: 0;
-    margin-block: 120px 0;
+    margin-block: var(--big-section-gap) 0;
   }
 
   .section {
@@ -489,7 +489,7 @@
   }
 
   .footer__title {
-    font-size: 157px;
+    font-size: var(--big-font-size);
     text-shadow: var(--shadow-x) calc(var(--shadow-y) * 2) 0 #ff0070 !important;
   }
 

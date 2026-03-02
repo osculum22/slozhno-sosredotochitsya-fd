@@ -29,6 +29,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    /*Дизайн*/
     --bg-image: url('../images/cover-image-light.png');
     --bg-color: #fff1f7;
     --decor-color: #353430;
@@ -41,9 +42,6 @@
     --text-color: #353430;
     --color-button: rgb(53, 52, 48);
     --color-button-border: rgb(53, 52, 48, 0.4);
-    /*--small-size: 18px;
-  --usual-offset: 10px;
-  --usual-gap: 10px;*/
 
     /*Отступы шапки*/
     --header-gap: 10px;
@@ -63,11 +61,6 @@
     /*Размеры и отступы REC и уголков*/
     --corner-inset: 10px;
     --corner-size: 25px;
-    /* --rec-decor-size: 9px;
-  --rec-line-height: 25px;
-  --rec-inset: 20px;
-  --blur-radius: 4px;
-  --spread-radius: 3px;*/
 
     /*Размеры и отступы футера*/
     --footer-gap: 5px;
@@ -84,16 +77,14 @@
     /* Футер — заголовок >=1024 */
     --footer-title-offset-big: 40px;
 
-    /**/
+    /*Размеры для десктоп*/
+    --big-font-size: 157px;
+    --big-section-gap: 120px;
+    --biggest-gap: 145px;
+    --header-menu-big-gap: 20px;
+    --header-menu-biggest-gap: 35px;
 
-    /**/
-
-    /**/
-
-    /**/
-
-    /**/
-
+    /*Декор*/
     --dark-decor-display: none;
   }
 }

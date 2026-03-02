@@ -9,6 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /*Дизайн*/
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --decor-color: rgb(255, 0, 112);
@@ -21,15 +22,6 @@
   --text-color: #f1b2ce;
   --color-button: rgb(255, 0, 112);
   --color-button-border: rgb(255, 0, 112, 0.4);
-
-  /* --corner-inset: 12px;
-  --corner-size: 25px;
-  --rec-decor-size: 9px;
-  --small-size: 18px;
-  --rec-line-height: 25px;
-  --rec-inset: 20px;
-  --usual-offset: 10px;
-  --usual-gap: 10px;*/
 
   /*Отступы шапки*/
   --header-gap: 10px;
@@ -51,7 +43,7 @@
   --corner-size: 25px;
   --rec-decor-size: 9px;
   --rec-line-height: 25px;
-  --rec-inset: 20px;
+  --rec-inset: 10px;
   --blur-radius: 4px;
   --spread-radius: 3px;
 
@@ -69,15 +61,14 @@
   --footer-corner-bottom-big: 745px;
   /* Футер — заголовок >=1024 */
   --footer-title-offset-big: 40px;
-  /**/
 
-  /**/
+  /*Размеры для десктоп*/
+  --big-font-size: 157px;
+  --big-section-gap: 120px;
+  --biggest-gap: 145px;
+  --header-menu-big-gap: 20px;
+  --header-menu-biggest-gap: 35px;
 
-  /**/
-
-  /**/
-
-  /**/
-
+  /*Декор*/
   --dark-decor-display: flex;
 }

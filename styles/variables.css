@@ -43,7 +43,7 @@
   --corner-size: 25px;
   --rec-decor-size: 9px;
   --rec-line-height: 25px;
-  --rec-inset: 20px;
+  --rec-inset: 10px;
   --blur-radius: 4px;
   --spread-radius: 3px;
 
@@ -62,7 +62,12 @@
   /* Футер — заголовок >=1024 */
   --footer-title-offset-big: 40px;
 
-  /**/
+  /*Размеры для десктоп*/
+  --big-font-size: 157px;
+  --big-section-gap: 120px;
+  --biggest-gap: 145px;
+  --header-menu-big-gap: 20px;
+  --header-menu-biggest-gap: 35px;
 
   /**/
 
