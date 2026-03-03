@@ -1,21 +1,5 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../fonts/IBMPlexMono-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../fonts/IBMPlexMono-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 *::before,
 *::after {
@@ -58,19 +42,4 @@ a {
   background-color: transparent;
   border: none;
   padding-inline: 0;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 50px;
-  margin-inline: var(--section-gap);
-  margin-block-start: calc(var(--section-gap) * 4);
-  margin-block-end: calc(var(--section-gap) * 3);
-}
-
-.footer {
-  height: 100vh;
-  min-height: 668px;
 }

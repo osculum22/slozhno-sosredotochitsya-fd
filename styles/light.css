@@ -12,18 +12,15 @@
   --bg-image: url('../images/cover-image-light.png');
   --bg-color: #fff1f7;
   --decor-color: #353430;
-  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --font-family: 'IBM Plex Mono';
   --title-text-color: #ffc2e6;
   --section-title-color: #353430;
   --accent-color: #ff8dcb;
   --subtitle-text-color: #353430;
   --text-color: #353430;
+  --color-button: rgb(53, 52, 48);
+  --color-button-border: rgb(53, 52, 48, 0.4);
 
-  --small-size: 18px;
-  --usual-offset: 10px;
-  --usual-gap: 10px;
-
+  /*Декор*/
   --dark-decor-display: none;
 }
 
@@ -33,8 +30,6 @@
     --bg-image: url('../images/cover-image-light.png');
     --bg-color: #fff1f7;
     --decor-color: #353430;
-    --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --font-family: 'IBM Plex Mono';
     --title-text-color: #ffc2e6;
     --section-title-color: #353430;
     --accent-color: #ff8dcb;
@@ -42,47 +37,6 @@
     --text-color: #353430;
     --color-button: rgb(53, 52, 48);
     --color-button-border: rgb(53, 52, 48, 0.4);
-
-    /*Отступы шапки*/
-    --header-gap: 10px;
-    --head-small-font: 18px;
-
-    /*Толщина границ*/
-    --decor-border: 1px;
-
-    /*Отступы и размеры в секциях, карточках, универсальный*/
-    --section-gap: 10px;
-    --small-font-size: 18px;
-
-    /*Тени*/
-    --shadow-x: 2px;
-    --shadow-y: 1px;
-
-    /*Размеры и отступы REC и уголков*/
-    --corner-inset: 10px;
-    --corner-size: 25px;
-
-    /*Размеры и отступы футера*/
-    --footer-gap: 5px;
-
-    /* Футер — уголки при >=768 */
-    --footer-corner-top-tablet: 38px;
-    --footer-corner-bottom-tablet: 995px;
-    /* Футер — заголовок >=768 */
-    --footer-title-offset-tablet: 40px;
-
-    /* Футер — уголки при >=1024 */
-    --footer-corner-top-big: 38px;
-    --footer-corner-bottom-big: 745px;
-    /* Футер — заголовок >=1024 */
-    --footer-title-offset-big: 40px;
-
-    /*Размеры для десктоп*/
-    --big-font-size: 157px;
-    --big-section-gap: 120px;
-    --biggest-gap: 145px;
-    --header-menu-big-gap: 20px;
-    --header-menu-biggest-gap: 35px;
 
     /*Декор*/
     --dark-decor-display: none;

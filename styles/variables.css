@@ -15,13 +15,6 @@
   --text-color: #f1b2ce;
   --color-button: rgb(255, 0, 112);
   --color-button-border: rgb(255, 0, 112, 0.4);
-  /*
-  --small-size: 18px;
-  --rec-line-height: 25px;
-  --rec-inset: 20px;
-  --usual-offset: 10px;
-  --usual-gap: 10px;
-*/
 
   /*Отступы шапки*/
   --header-gap: 10px;
@@ -51,31 +44,26 @@
   --footer-gap: 5px;
 
   /* Футер — уголки при >=768 */
-  --footer-corner-top-tablet: 38px;
-  --footer-corner-bottom-tablet: 995px;
+  --footer-corner-top-tablet: 40px;
+  --footer-corner-bottom-tablet: 0;
+
   /* Футер — заголовок >=768 */
   --footer-title-offset-tablet: 40px;
 
   /* Футер — уголки при >=1024 */
   --footer-corner-top-big: 38px;
-  --footer-corner-bottom-big: 745px;
+  --footer-corner-bottom-big: 10px;
+
   /* Футер — заголовок >=1024 */
   --footer-title-offset-big: 40px;
 
   /*Размеры для десктоп*/
-  --big-font-size: 157px;
+  --big-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --big-section-gap: 120px;
-  --biggest-gap: 145px;
+  --biggest-gap: 142px;
   --header-menu-big-gap: 20px;
-  --header-menu-biggest-gap: 35px;
+  --header-menu-biggest-gap: 10px;
 
-  /**/
-
-  /**/
-
-  /**/
-
-  /**/
-
+  /*Декор*/
   --dark-decor-display: flex;
 }
