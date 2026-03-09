@@ -21,8 +21,7 @@
   --color-button: rgb(255, 0, 112);
   --color-button-border: rgb(255, 0, 112, 0.4);
 
-  /*Размеры и отступы REC и уголков*/
-
+  /*Размеры и отступы REC и уголков ТОЛЬКО ДЛЯ ТЕМНОЙ ТЕМЫ нужны для пушистого шарика около REC*/
   --rec-decor-size: 9px;
   --rec-line-height: 25px;
   --rec-inset: 10px;

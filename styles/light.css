@@ -38,6 +38,13 @@
     --color-button: rgb(53, 52, 48);
     --color-button-border: rgb(53, 52, 48, 0.4);
 
+    /*Размеры и отступы REC и уголков ТОЛЬКО ДЛЯ ТЕМНОЙ ТЕМЫ нужны для пушистого шарика около REC*/
+    --rec-decor-size: 0;
+    --rec-line-height: 0;
+    --rec-inset: 0;
+    --blur-radius: 0;
+    --spread-radius: 0;
+
     /*Декор*/
     --dark-decor-display: none;
   }
